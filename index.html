@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Слово-молния</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <div>Счёт: <b id="score">0</b></div>
+  <div>Жизни: <b id="lives">3</b></div>
+  <div>Рекорд: <b id="best">0</b></div>
+</header>
+<div id="field">
+  <div id="ground"></div>
+  <div id="overlay">
+    <h1>⚡ Слово-молния</h1>
+    <div>Набирай падающие слова и жми Enter или пробел.<br>Не дай трём словам упасть!</div>
+    <button id="start">Играть</button>
+  </div>
+</div>
+<input id="input" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="печатай здесь…">
+<div class="hint">Введённые буквы подсвечиваются у слова, которое совпадает с началом.</div>
+
+<script src="js/words.js"></script>
+<script src="js/state.js"></script>
+<script src="js/words-field.js"></script>
+<script src="js/game.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
